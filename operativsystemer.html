@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Operativsystemer</title>
+
+    <!-- To fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Mobil-first – opbygget som i dit PowerPoint: header → nav → main (sektioner med overskrift, tekst, billede) → footer */
+      :root {
+        --bg: #f7f7f7;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --card: #ffffff;
+        --border: #e5e7eb;
+        --header: #111827;
+        --link: #2563eb;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+      }
+      body {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        line-height: 1.65;
+      }
+
+      header,
+      footer {
+        background: var(--header);
+        color: #fff;
+        text-align: center;
+        padding: 16px 12px;
+        font-family: "Playfair Display", Georgia, serif;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      nav {
+        background: #eef2f7;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      nav a {
+        display: block;
+        text-decoration: none;
+        color: var(--text);
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 10px 12px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      main {
+        max-width: 740px;
+        margin: 20px auto;
+        padding: 16px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+      }
+
+      /* Store overskrifter som i wireframe */
+      h2 {
+        margin: 0 0 14px 0;
+        font-size: 24px;
+        font-family: "Playfair Display", Georgia, serif;
+      }
+      h3 {
+        margin: 18px 0 8px 0;
+        font-size: 20px;
+        font-family: "Playfair Display", Georgia, serif;
+      }
+
+      p {
+        margin: 0 0 12px 0;
+        color: var(--muted);
+      }
+
+      /* Sektioner adskilt med luft (margin/padding) for læsbarhed */
+      section.block {
+        padding: 12px;
+        margin: 12px 0;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      /* Billeder står under teksten i hver sektion (som i PowerPoint) */
+      .block img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+        display: block;
+      }
+
+      a {
+        color: var(--link);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Operativsystemer</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="min_computer.html">Min computer</a></li>
+        <li><a href="operativsystemer.html">Operativsystemer</a></li>
+        <li><a href="komponenter.html">Komponenter</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Operativsystemer</h2>
+
+      <!-- MAC-sektion -->
+      <section class="block">
+        <h3>Mac</h3>
+        <p>Ikke alle tænker over, at 'Mac' er en forkortelse af 'Macintosh'. Operativsystemet har en historie, der begynder i 1984, hvor den personlige computer (PC) ikke var alles eje.</p>
+        <p>
+          I dag er sagen en anden: De fleste mennesker kan i 2022 forventes at have mindst én computer. For nogle er det en mobiltelefon, for andre en laptop og for andre igen en stationær. Og langt de fleste danskere har også mere end én computer i
+          deres hjem.
+        </p>
+        <p>
+          I skrivende stund bruger de nyeste Mac-computere styresystemet macOS, der er et UNIX-operativsystem. Seneste version er macOS 12.5 fra d. 20. juli 2022. Mest spændende er nok det skifte, Apple, der står bag Mac, i 2020 begyndte på, da de
+          præsenterede Apple M1-processoren, hvor de før brugte Intel Core-processorer. M1-chippen skulle være revolutionær.
+        </p>
+        <img src="images.jfif" alt="Mac / macOS" />
+      </section>
+
+      <!-- WINDOWS-sektion -->
+      <section class="block">
+        <h3>Windows</h3>
+        <p>
+          Fra Microsoft har vi styresystemet Windows. Det er udbredt til en lang række mærker indenfor PC-markedet. Windows vs. Mac kan godt opleves som lidt af en (smags-)religion, men det er først og fremmest to forskellige systemer, som hver især
+          kræver tilpas meget at blive effektiv i at bruge. Windows 11 er nyeste skud på stammen.
+        </p>
+        <p>En computer med Windows er ofte billigere end én med macOS, men du kan roligt regne med, at de fleste vil foretrække enten det ene eller andet og ikke altid overveje prisen på systemet, de bliver en del af.</p>
+        <p>
+          Der er klart flere computere, der kører på Windows i forhold til macOS. Du kan se lidt forskellig statistik på styresystemer hos f.eks. W3Schools under deres Browser Stats &gt; Browsers OS:
+          <a href="https://www.w3schools.com/browsers/browsers_os.asp">w3schools.com/browsers/browsers_os.asp</a>
+        </p>
+        <img src="macos-vs-windows-which-os-really-is-the-best_hxwa.jpg" alt="Windows" />
+      </section>
+
+      <!-- TABLETS & MOBILER-sektion -->
+      <section class="block">
+        <h3>Tablets og mobiler</h3>
+        <p>
+          Hvis du har en tablet eller en mobiltelefon, så har den også et styresystem. En smartphone i dag har typisk enten iOS (Apple) eller Android (mange forskellige mærker). For år tilbage kunne man også se mobiler med Windows Mobile. Men de er i
+          dag en sjældenhed, selvom mange fandt tilgængeligheden for svagsynede bedst hos Windows.
+        </p>
+        <p>Nogle tech-nørder afsværger Android og iOS og installerer i stedet f.eks. Linux på deres telefon. Det kan f.eks. være Ubuntu Touch. Apple har også lavet et tablet-dedikeret operativsystem, de kalder iPadOS.</p>
+        <img src="mobiltelefon.jpg" alt="Tablets og mobiler" />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Computere</p>
+    </footer>
+  </body>
+</html>

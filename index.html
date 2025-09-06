@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Computere</title>
+
+    <!-- To fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        font-family: "Inter", sans-serif;
+        color: #1f2937;
+        line-height: 1.6;
+      }
+
+      header,
+      footer {
+        background: #111827;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        font-family: "Playfair Display", serif;
+      }
+
+      nav {
+        background: #e5e7eb;
+        padding: 12px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #111827;
+        background: white;
+        padding: 10px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      main {
+        padding: 16px;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 16px 0;
+        display: block;
+      }
+
+      .stats {
+        background: white;
+        border: 1px solid #d1d5db;
+        padding: 16px;
+        border-radius: 8px;
+        margin-top: 16px;
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 12px;
+      }
+
+      .stat {
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .stat .label {
+        font-size: 14px;
+        color: #6b7280;
+      }
+
+      .stat .value {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2563eb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Computer motherboard</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="min_computer.html">Min computer</a></li>
+        <li><a href="operativsystemer.html">Operativsystemer</a></li>
+        <li><a href="komponenter.html">Komponenter</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>En Hjemmeside om computeren</h2>
+      <p>En side om computeren med alt fra dens historie til dens specifikationer og mine personlige præferencer, når det gælder computere og computerudstyr.</p>
+
+      <img src="pc4.png" alt="Computer motherboard" width="80" />
+
+      <section class="stats">
+        <h3>Stats</h3>
+        <p>
+          Ni ud af ti familier ejer i 2022 en eller flere smartphones, mens knap seks ud af ti familier har en tablet-pc liggende. Hele 94 procent ejer en personlig computer, hvoraf fire ud af ti anvender Windows som deres primære operativsystem.
+        </p>
+
+        <div class="stat-grid">
+          <div class="stat">
+            <span class="label">Personlig computer</span>
+            <span class="value">94%</span>
+          </div>
+          <div class="stat">
+            <span class="label">Windows</span>
+            <span class="value">40%</span>
+          </div>
+          <div class="stat">
+            <span class="label">Tablet</span>
+            <span class="value">56%</span>
+          </div>
+          <div class="stat">
+            <span class="label">Smartphone</span>
+            <span class="value">93%</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Computere</p>
+    </footer>
+  </body>
+</html>

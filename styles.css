@@ -1,0 +1,80 @@
+/* styles.css — mobile first */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f6fa;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #0b1220;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  background: white;
+  margin: 8px;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+/* Main indhold */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 16px;
+}
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Galleri grid */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Footer */
+footer {
+  background: #0b1220;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 20px;
+}

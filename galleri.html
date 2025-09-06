@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Galleri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f6fa;
+        line-height: 1.6;
+      }
+
+      header {
+        background: #0b1220;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        background: white;
+        margin: 8px;
+        padding: 14px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 16px;
+      }
+
+      section {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+      }
+
+      @media (min-width: 768px) {
+        .gallery {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      footer {
+        background: #0b1220;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Galleri</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="min_computer.html">Min computer</a></li>
+        <li><a href="operativsystemer.html">Operativsystemer</a></li>
+        <li><a href="komponenter.html">Komponenter</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Udseende</h2>
+        <p>Det er ret vildt, hvor forskellige, og nogle gange hvor ens, computere ser ud. Her kan du se nogle eksempler på, hvordan computere ser ud. Bemærk forskelle og ligheder på de forskellige billeder.</p>
+      </section>
+
+      <section>
+        <div class="gallery">
+          <img src="analyst-working-business-analytics-data-management-system-make-report-with-kpi-metrics-connected-database_968517-134932.jpg" alt="To skærme med data og grafer" />
+          <img src="pic2 keyboard.png" alt="Nærbillede af tastatur med Windows-knap" />
+          <img src="hello pic.1.png" alt="Klassisk Apple Macintosh med teksten hello" />
+          <img src="images.jfif" alt="Bærbar computer med belyst tastatur" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mit Website</p>
+    </footer>
+  </body>
+</html>
